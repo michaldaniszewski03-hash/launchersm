@@ -1,0 +1,20 @@
+{
+  "name": "smx-launcher",
+  "version": "1.0.0",
+  "description": "Chromium wrapper for launcher.silvermonkey.com",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable --publish never"
+  },
+  "devDependencies": {
+    "electron": "^38.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "com.smx.launcher",
+    "productName": "SMX Launcher",
+    "files": ["main.js", "package.json"],
+    "win": { "target": "portable" }
+  }
+}
